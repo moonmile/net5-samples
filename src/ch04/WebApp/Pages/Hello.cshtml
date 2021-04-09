@@ -1,0 +1,15 @@
+﻿@page
+@model WebApp.Pages.HelloModel
+@{
+    ViewData["Title"] = "Hello .NET 5 World.";
+    var message = $"こんにちは {Model.Name} さん";
+}
+
+
+<h1>@ViewData["Title"]</h1>
+
+<div>@message</div>
+<div>現在時刻は @Model.Now です</div>
+
+
+

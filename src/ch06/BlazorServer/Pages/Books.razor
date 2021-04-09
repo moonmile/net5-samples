@@ -1,0 +1,38 @@
+﻿@page "/books"
+@using Models
+
+
+<h3>書籍一覧</h3>
+
+<table class="table">
+    <thead>
+        <tr>
+            <td>タイトル</td>
+            <td>著者名</td>
+            <td>価格</td>
+            <td>出版社</td>
+        </tr>
+    </thead>
+    @foreach (var it in books)
+    {
+        <tr>
+            <td>@it.Title</td>      		
+            <td>@it.Author</td>
+            <td>@it.Price</td>
+            <td>@it.Publisher</td>
+        </tr>
+    }
+</table>
+
+
+@code {
+
+    private List<Book> books;
+
+    protected override void OnInitialized()
+    {
+
+        var context = new blazordbContext();
+        this.books = context.Books.ToList();
+    }
+}

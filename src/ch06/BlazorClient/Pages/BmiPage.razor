@@ -1,0 +1,40 @@
+﻿@page "/bmi"
+<h3>BMIを計算する</h3>
+
+<table class="table">
+    <tr>
+        <td>名前</td>
+        <td>@name</td>      	
+    </tr>
+    <tr>
+        <td>身長</td>
+        <td><input @bind-value="height" /></td>
+    </tr>
+    <tr>
+        <td>体重</td>
+        <td><input @bind-value="weight" /></td>
+    </tr>
+</table>
+<button class="btn btn-primary" @onclick="onCalc">計算</button>
+<div style="font-size:32pt;">
+    計算結果は @bmi.ToString("00.0") です。          	
+</div>
+
+@code {
+    /// 名前
+    private string name = "Tomoaki Masuda";
+    /// 身長
+    private double height = 160.0; // cm 単位
+    /// 体重
+    private double weight = 60.0; // kg 単位
+    /// BMI
+    private double bmi = 0.0;
+
+    /// <summary>
+    /// 計算する
+    /// </summary>
+    private void onCalc()
+    {
+        bmi = weight / ((height / 100.0) * (height / 100.0));
+    }
+}
