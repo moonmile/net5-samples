@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
-VisualStudioVersion = 16.0.31105.61
+VisualStudioVersion = 16.0.31129.286
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sample", "sample.csproj", "{C5EB6C70-F22E-4821-A5D1-2B8ED6E8CA34}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FuncHttpDB", "FuncHttpDB.csproj", "{BBD98671-0066-44F8-8597-CFC1B5DC07CD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C5EB6C70-F22E-4821-A5D1-2B8ED6E8CA34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C5EB6C70-F22E-4821-A5D1-2B8ED6E8CA34}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C5EB6C70-F22E-4821-A5D1-2B8ED6E8CA34}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C5EB6C70-F22E-4821-A5D1-2B8ED6E8CA34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBD98671-0066-44F8-8597-CFC1B5DC07CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBD98671-0066-44F8-8597-CFC1B5DC07CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBD98671-0066-44F8-8597-CFC1B5DC07CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBD98671-0066-44F8-8597-CFC1B5DC07CD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {02EF5897-AA35-41D7-BE04-31E94F7AE333}
+		SolutionGuid = {62403AC9-9DA6-4769-A7DF-F5A732853531}
 	EndGlobalSection
 EndGlobal

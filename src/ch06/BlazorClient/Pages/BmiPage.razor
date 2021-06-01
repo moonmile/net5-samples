@@ -1,10 +1,11 @@
 ﻿@page "/bmi"
+
 <h3>BMIを計算する</h3>
 
 <table class="table">
     <tr>
         <td>名前</td>
-        <td>@name</td>      	
+        <td>@name</td>
     </tr>
     <tr>
         <td>身長</td>
@@ -17,8 +18,9 @@
 </table>
 <button class="btn btn-primary" @onclick="onCalc">計算</button>
 <div style="font-size:32pt;">
-    計算結果は @bmi.ToString("00.0") です。          	
+    計算結果は @bmi.ToString("00.0") です。
 </div>
+
 
 @code {
     /// 名前
@@ -37,4 +39,11 @@
     {
         bmi = weight / ((height / 100.0) * (height / 100.0));
     }
+
+
+    public void Dispose()
+    {
+        // デストラクタを定義
+    }
+
 }

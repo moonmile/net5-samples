@@ -1,0 +1,50 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfControlSampleTest"
+        xmlns:WpfControlSample="clr-namespace:WpfControlSample;assembly=WpfControlSample" x:Class="WpfControlSampleTest.MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="80" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <WpfControlSample:UserControlSample 
+            Grid.Row="0" Grid.Column="0" 
+            HelloMessage="Hell .NET5 World."
+            Command="{Binding Clicked}"
+            Background="Pink" />
+        <WpfControlSample:UserControlSample 
+            Grid.Row="0" Grid.Column="1"
+            HelloMessage="ようこそ .NET5 の世界へ"
+            Command="{Binding Clicked}" >
+            <WpfControlSample:UserControlSample.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="Yellow" Offset="0.0" />
+                    <GradientStop Color="Red" Offset="0.25" />
+                    <GradientStop Color="Blue" Offset="0.75" />
+                    <GradientStop Color="LimeGreen" Offset="1.0" />
+                </LinearGradientBrush>
+            </WpfControlSample:UserControlSample.Background>
+        </WpfControlSample:UserControlSample>
+
+        <Button Grid.Row="1" Margin="4"
+                FontSize="40"
+                Content="Click!"
+                Command="{Binding Clicked}"
+                />
+        <TextBox Grid.Row="1" Grid.Column="1" 
+                 Margin="8"
+                 Text="{Binding CountText}"
+                 FontSize="40"/>
+
+
+    </Grid>
+</Window>
