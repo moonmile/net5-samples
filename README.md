@@ -10,20 +10,14 @@
 書籍の章立てとサンプルコードの対応です。
 
 - src
-    - ch01 : 第1省 .NET 5 の仕組み
-    - ch02 : 第2章 開発環境
-    - ch03 : 第3章 最初のBlazorアプリ
-    - ch04 : 第4章 コンポーネント
-    - ch05 : 第5章 データバインディング
-    - ch06 : 第6章 イベント処理
-    - ch07 : 第7章 Razor記法
-    - ch08 : 第8章 フォームと検証
-    - ch09 : 第9章 データベースアクセス
-    - ch10 : 第10章 Web APIの活用
-    - ch11 : 第11章 SVGの活用
-    - ch02 : 第12章 JavaScriptとの連携
-    - appendix : 付録 Blazor アプリの発行
-
+    - ch01 : 第1省 .NET 5の仕組み
+    - ch02 : 第2章 .NET 5の開発環境
+    - ch03 : 第3章 WindowsフォームとWPF
+    - ch04 : 第4章 ASP.NET MVCとWeb API
+    - ch05 : 第5章 Entity Framework
+    - ch06 : 第6章 Blazor
+    - ch07 : 第7章 Azure
+    - ch08 : 第8章 Linux 環境
 
 # ライセンス＆免責
 
